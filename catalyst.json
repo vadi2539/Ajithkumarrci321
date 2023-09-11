@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "targets": [
+      "road_safety_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}

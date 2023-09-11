@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "15945000000073016",
+      "name": "RoadSafety",
+      "domain": {
+        "id": "10064638911",
+        "name": "roadsafety-819067777.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "819067777",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
