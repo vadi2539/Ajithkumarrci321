@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>RoadSafety</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Logout-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--Logout-->
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="main.js"></script>
+ <script src="https://static.zohocdn.com/catalyst/sdk/js/3.0.0/catalystWebSDK.js"></script>
+ <script src="/__catalyst/sdk/init.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<style>
+	.mark1{
+		background: #ffff;
+	}
+	   .container{
+		   height: 365px;
+		   width: 22%;
+		   margin:16px;
+		   box-shadow: 4px 8px #80bfff;
+		   border: 2px solid  ;
+		   border-color:#09BFB9;
+		   border-radius:8px;
+		   text-align: left;
+		   line-height: 20pt;
+		   background: #FCFDFF;
+		   }
+		   .mark1 {
+	 justify-content: center;
+	 align-items: center;
+	   display: flex;
+	 flex-wrap: wrap;
+		   }
+	   a{
+		   color:black;
+		   font-size:16px;
+		   font-family: Lato,sans-serif;
+		   
+	   }
+	   p{
+		   font-size:22px ;
+		   color:#631AB1;
+		   font-family:serif;
+		   text-align: center;
+		   
+	   }
+	   .col{
+		   text-align: left;
+		   
+	   }
+	   .product-tumb {
+	  
+	   align-items: center;
+	   justify-content: center;
+	   height: 30px;
+	   width: 100%;
+	   
+   }
+		   
+   @media only screen and (max-width: 768px) {
+   .container{
+		   height: 330px;
+		   width:100%;
+		   margin:22px;
+		   box-shadow: 2px 4px #80bfff;
+		   border: 2px solid  ;
+		   border-color:#3399ff;
+		   border-radius:10px;
+		   text-align: left;
+		   line-height: 11pt;
+		   }
+	   
+	   p{
+		   font-size:15px ;
+		   color:black;
+		   font-family:serif;
+	   }
+	   a{
+		   color:blue(40, 43, 45);
+		   font-size:9px;
+		   font-family: serif;
+		   
+	   }
+	   
+	   }
+   
+   </style>
+  
+  <style>.heading1{margin-left : 40%;display: inline-block;color: #fff; font-family: 'Lato', sans-serif; font-size: 16px; font-weight: 700; line-height: 48px;  padding: 0 30px; text-align: center; }.iconforMas{background-color:#1967D2;}@media only screen and (max-width: 768px) {.heading1{font-size: 12px;text-align: center;margin-left : 35%}</style>
+<body>
+<div style='background-color=powderblue' class = 'iconforMas'><div class='heading1' > Global Masters 
+<button onclick="logout()" class="btn btn-info btn-lg" style="position: absolute; top: 10px; right: 10px;">
+	<span class="glyphicon glyphicon-log-out"></span> Log out
+</div>
+</div>
+</button>
+	
+      </p> 
+<div class="parent-container d-flex ">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+			<input type="hidden">
+				<p><b><u>Incident</u></b></p>
+			 <a style="text-decoration:none;" href="Agencies_type.html">Agencies Type </a><br>
+				<a style="text-decoration:none;" href="Agencies.html">Agencies </a><br>
+				<a style="text-decoration:none;" href="Agencies.html">Damage Criteria</a><br>
+			    <a style="text-decoration:none;" href="#Page:RFI_For1">Dead Animal Reasons</a><br>
+				<a style="text-decoration:none;" href="#Page:Side_Master1">Debris Types</a><br>
+                <a style="text-decoration:none;" href="#Page:Dimension_master"> Detected By</a><br>
+				<a style="text-decoration:none;" href="#Page:Formula_Master1"> Encroachment Actions</a><br>
+	            <a style="text-decoration:none;" href="#Page:Level_master1"> Encroachment Categories</a><br>
+				<a style="text-decoration:none;" href="#Page:Rfi_Review_Status_Master11"> Hazchem Classification</a><br>		
+				<a style="text-decoration:none;" href="#Page:RFI_NUM_PAGE">Incident Types</a><br>
+				<a style="text-decoration:none;" href="#Page:Rfi_Review_Status_Master11"> Stranded Reasons</a><br>		
+				<a style="text-decoration:none;" href="#Page:RFI_NUM_PAGE">Violation Types</a><br>
+            </div>
+        </div>
+    </div>
+		<div class="container">
+        <div class="row">
+            <div class="col">
+			<input type="hidden">
+			<p><b><u>Road Nature</u></b></p>
+			<a style="text-decoration:none;" href="#Page:Application_Role_Master1">  Section Type</a><br>
+	<a style="text-decoration:none;" href="#Page:Organisation_Masters_Page"> Intersection Type</a><br>
+	<a style="text-decoration:none;" href="#Page:User_Role_Master1"> Intersection Control Type</a><br>
+	<a style="text-decoration:none;" href="#Page:User_Master1">  Longitudinal Alignment Type</a><br>
+	<a style="text-decoration:none;" href="#Page:User_management_Page">Vertical Alignment Type</a><br>			
+	<a style="text-decoration:none;" href="#Page:Application_Role_Master1">  Road Types</a><br>
+	<a style="text-decoration:none;" href="#Page:Organisation_Masters_Page"> Pavement Condition</a><br>
+	<a style="text-decoration:none;" href="#Page:User_Role_Master1"> Special Carriageway Conditions</a><br>
+	<a style="text-decoration:none;" href="#Page:User_Master1">  Lane Types</a><br>
+	<a style="text-decoration:none;" href="#Page:User_management_Page">Surface Types</a><br>			
+            </div>
+        </div>
+    </div>
+	<div class="container">
+        <div class="row">
+            <div class="col">
+			<input type="hidden">
+			<p><b><u>General</u></b></p>
+			<a style="text-decoration:none;" href="#Page:Section_Master1">Asset Types</a><br>
+			<a style="text-decoration:none;" href="#Page:Road_Type_Mapping1">Assets</a><br>
+			<a style="text-decoration:none;" href="#Page:RFI_For_Mapping1">Weather Conditions</a><br>
+			<a style="text-decoration:none;" href="#Page:RFI_Workflow_Configurations1">Visibility</a><br>
+			<a style="text-decoration:none;" href="#Page:RFI_Evaluator_Management1">Road Safety Measures</a><br>
+			<a style="text-decoration:none;" href="#Page:RFI_Workflow_Configurations1">Project Vehicle Types</a><br>
+			<a style="text-decoration:none;" href="#Page:RFI_Evaluator_Management1">Vehicle Types</a><br>
+				
+				
+					
+				
+            </div>
+        </div>
+    </div>
+	
+	<div class="container">
+        <div class="row">
+            <div class="col">
+			<input type="hidden">
+			<p><b><u> Accident </u></b></p>
+			<a style="text-decoration:none;" href="#Page:Road_Type_Master1"> Accident Location Characterisation</a><br>
+			<a style="text-decoration:none;" href="#Page:Highway_Component1">Nature of Accident</a><br>
+			<a style="text-decoration:none;" href="#Page:Highway_Item_Master1"> Accident Cause Categories</a><br>
+			<a style="text-decoration:none;" href="#Page:RFI_Activity_Masters2"> Accident Causes</a><br>
+			
+            </div>
+        </div>
+    </div>
+  </div>
+  <div style='background-color = powderblue' class = 'iconforMas'><div class='heading1' > SPV Masters </div></div>
+  
+<div class="parent-container d-flex">  
+	  <div class="container">
+        <div class="row">
+            <div class="col">
+			<input type="hidden">
+			<p><b><u> SPV Masters </u></b></p>
+		<a style="text-decoration:none;" href="#Page:General_RFI_Type_Master1"> SPV</a><br>
+		<a style="text-decoration:none;" href="#Page:General_RFI_Item"> Patrol Section </a><br>
+		<a style="text-decoration:none;" href="#Page:General_RFI_Activity1"> Plaza </a><br>
+		 <a style="text-decoration:none;" href="#Page:General_RFI_Activity_Mapping1">Location </a><br>   
+		 <a style="text-decoration:none;" href="#Page:General_EPC_Management1">Vehicles</a><br>
+		 <a style="text-decoration:none;" href="#Page:General_EPC_Management1">Shift</a><br>
+
+				
+		   </div>
+        </div>
+    </div>
+
+</html>
+
+
+
+	

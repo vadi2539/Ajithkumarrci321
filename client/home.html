@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RoadSafety</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+    <script src="https://static.zohocdn.com/catalyst/sdk/js/3.0.0/catalystWebSDK.js"></script>
+    <script src="/__catalyst/sdk/init.js"></script>
+    
+  </head>
+
+  <style>
+/* styles.css */
+.top-menu ul,
+.top-menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-shadow: 0px 4px 8px 0px #ffffff;
+    border-radius: 0px;
+    
+}
+
+
+.top-menu {
+    background-color: #706fd3;
+    color: #fff;
+}
+
+.top-menu ul {
+    display: flex;
+}
+
+.top-menu li {
+    position: relative;
+    padding: 13px 20px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-menu ul ul {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 100%;
+    left: 0;
+    background-color: #3BB9FF;
+}
+
+.top-menu li:hover > ul {
+    display: block;
+}
+
+.top-menu ul ul ul {
+    top: 0;
+    left: 100%;
+    background-color: #82CAFF;
+    width: 205px;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 7px 16px;
+    font-size: 15px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+	}
+element.style {
+    width: 115px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    height: 38px;
+}
+</style>
+<body>
+<nav class="top-menu">
+        <ul><b>
+            <li><a href="#">Home</a></li></b>
+            <li>
+                <a href="#">Global Master</a>
+                <ul class="GlobalmasterBox">
+                    <li><a href="#">Incident</a>
+                      <ul>
+                            <li><a href="Agencies_type.html">Agencies Type</a></li>
+                            <li><a href="Agencies.html">Agencies</a></li>
+                            <li><a href="#">Damage Criteria</a></li>
+                            <li><a href="#">Dead Animal Reasons</a></li>
+                            <li><a href="#">Debris Types</a></li>
+                            <li><a href="#">Detected By</a></li>
+                            <li><a href="#">Encroachment Actions</a></li>
+                            <li><a href="#">Encroachment Categories</a></li>
+                            <li><a href="#">Hazchem Classification</a></li>
+                            <li><a href="#">Incident Types</a></li>
+                            <li><a href="#">Stranded Reasons</a></li>
+                            <li><a href="#">Violation Types</a></li>
+
+                         
+                        </ul></li>
+                    <li>
+                        <a href="#">Road Nature</a>
+                        <ul>
+                            <li><a href="#">Section Type</a></li>
+                            <li><a href="#">Intersection Type</a></li>
+                            <li><a href="#">Intersection Control Type</a></li>
+                            <li><a href="#">Longitudinal Alignment Type</a></li>
+                            <li><a href="#">Vertical Alignment Type</a></li>
+                            <li><a href="#">Road Types</a></li>
+                            <li><a href="#">Payment Condition </a></li>
+                            <li><a href="#">Special Carriageway Conditions</a></li>
+                            <li><a href="#">Lane Types</a></li>
+                            <li><a href="#">Surface Types</a></li>
+							
+                        </ul>
+                    </li>
+                    <li><a href="#">General</a>
+                    <ul>
+                        <li><a href="#">Assest Type</a></li>
+                        <li><a href="#">Assests</a></li>
+                        <li><a href="#">Weather Conditions</a></li>
+                        <li><a href="#">Visibility</a></li>
+                        <li><a href="#">Road Safety Measures</a></li>
+                        <li><a href="#">Project Vehicle Types</a></li>
+                        <li><a href="#">Vehicle Types</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#">Accident</a>
+                    <ul>
+                        <li><a href="#">Accident Location Characterisation</a></li>
+                        <li><a href="#">Nature of Accident</a></li>
+                        <li><a href="#">Accident Cause Categories</a></li>
+                        <li><a href="#">Accident Causes</a></li>
+                       
+                        
+                    </ul>
+                </li>
+                </ul>
+            </li>
+            <li><a href="#">SPV Master</a>
+                <ul>
+                    <li><a href="#">SPV</a></li>
+                    <li><a href="#">Patrol Section</a></li>
+                    <li><a href="#">Plaza</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Vehicles</a></li>
+                    <li><a href="#">Shift</a></li>
+                   
+                    
+                </ul>
+				
+            </li>
+			
+            <li><a href="#">Contact</a></li>
+			
+        </ul>
+		<div>
+		<button onclick="logout()" class="btn btn-info btn-lg" style="position: absolute; top: 5px; right: 10px;">
+	<span class="glyphicon glyphicon-log-out"></span> Log out
+	</div>
+    </nav>
+</body>
+<script>
+// script.js
+const topLevelItems = document.querySelectorAll('.top-menu > ul > li');
+
+topLevelItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        const subMenu = item.querySelector('ul');
+        if (subMenu) {
+            subMenu.style.display = 'block';
+        }
+    });
+
+    item.addEventListener('mouseleave', () => {
+        const subMenu = item.querySelector('ul');
+        if (subMenu) {
+            subMenu.style.display = 'none';
+        }
+    });
+});
+
+</script>
+<html>
